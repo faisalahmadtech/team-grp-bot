@@ -1,0 +1,57 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.17/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.17",
+    "version": "1.0.0",
+    "id": "68475615-1643-4fec-8a19-95449a6f3720",  
+    "packageName": "com.example.teamsbot",
+    "developer": {
+      "name": "faisal Ahmad",
+      "websiteUrl": "https://your-website.com",  
+      "privacyUrl": "https://your-website.com/privacy",  
+      "termsOfUseUrl": "https://your-website.com/terms"  
+    },
+    "icons": {
+      "outline": "outline.png",
+      "color": "color.png"
+    },
+    "name": {
+      "short": "Ollama Bot",
+      "full": "Ollama Teams Bot"
+    },
+    "description": {
+      "short": "A bot powered by Ollama for Microsoft Teams.",
+      "full": "This bot integrates with the Ollama open-source model to provide intelligent responses in Microsoft Teams channels and chats."
+    },
+    "accentColor": "#FFFFFF",
+    "bots": [
+      {
+        "botId": "68475615-1643-4fec-8a19-95449a6f3720",  
+        "scopes": ["team", "groupchat"],
+        "supportsFiles": false,
+        "isNotificationOnly": false,
+        "commandLists": [
+                {
+                    "scopes": [
+                        "team",
+                        "personal",
+                        "groupchat"
+                    ],
+                    "commands": [
+                        {
+                            "title": "help",
+                            "description": "Shows help information"
+                        },
+                        {
+                            "title": "analyze",
+                            "description": "Analyze content or attachments"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "permissions": ["identity", "messageTeamMembers"],
+    "validDomains": [
+      "https://6224-2401-4900-1c61-868c-b0d7-4a20-d797-ff98.ngrok-free.app"  
+    ]
+  }
